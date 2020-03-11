@@ -1,0 +1,55 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  int planet;
+  double personweight;
+  double venusgravity = 0.78;
+  double marsgravity = 0.39;
+  double jupitergravity = 2.65;
+  double saturngravity = 1.17;
+  double uranusgravity = 1.05;
+  double neptunegravity = 1.23;
+  
+  std::cout << "What is your weight on Earth (kg): ";
+  std::cin >> personweight;
+  std::cout << "\n";
+  
+  std::cout << "Which planet do you want to fight on? (Choose a whole number from 1-6) ";
+  std::cin >> planet;
+  
+  switch (planet) {
+    case 1:
+      std::cout << "Your weight on Venus is " << personweight * venusgravity << "kg\n"; 
+      break;
+    case 2:
+      std::cout << "Your weight on Mars is " << personweight * marsgravity << "kg\n"; 
+      break;
+    case 3:
+      std::cout << "Your weight on Jupiter is " << personweight * jupitergravity << "kg\n"; 
+      break;
+    case 4:
+      std::cout << "Your weight on Saturn is " << personweight * saturngravity << "kg\n"; 
+      break;
+    case 5:
+      std::cout << "Your weight on Uranus is " << personweight * uranusgravity << "kg\n"; 
+      break;
+    case 6:
+      std::cout << "Your weight on Neptune is " << personweight * neptunegravity << "kg\n"; 
+      break;
+    default:
+      std::cout << "Please enter an integer between 1-6!\n";
+      break;
+      
+  }
+  
+}

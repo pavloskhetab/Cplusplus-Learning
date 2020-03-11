@@ -1,0 +1,37 @@
+#include <iostream>
+
+ // Conduct IT support
+void it_support() {
+    std::string on_off_attempt;
+    std::cout << "Hello. IT.\n";
+    std::cout << "Have you tried turning it off and on again? y/n\n";
+    std::cin >> on_off_attempt;
+    std::cout << on_off_attempt << "\n";
+}
+
+// Check in with Jenn
+void check_in_jenn() {
+    std::cout << "Oh hi Jen!\n";
+}
+
+// Check in with Roy
+void check_in_roy() {
+  std::cout << "You stole the stress machine? But that's stealing!\n";
+}
+
+int main() {
+
+  // Conduct IT support
+ it_support();
+ 
+ check_in_jenn();
+ 
+  // Conduct IT support again...
+  it_support();
+ 
+ check_in_roy();
+ 
+  // Conduct IT support yet again...zzzz...
+ it_support();
+ 
+}

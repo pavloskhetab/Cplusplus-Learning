@@ -1,0 +1,21 @@
+#Inline functions
+
+
+#Default arguments
+When a function has two default arguments, you still need to call with both arguments — 
+
+BOTH of the following are true:
+-The first argument IS the default value.
+-The second argument is NOT the default value.
+
+
+#Function Overloading
+You can give multiple C++ functions the same name. 
+
+At least one of these conditions is true:
+-Each has different type parameters.
+-Each has a different number of parameters.
+
+
+#Template
+A template is a C++ tool that allows programmers to add data types as parameters.

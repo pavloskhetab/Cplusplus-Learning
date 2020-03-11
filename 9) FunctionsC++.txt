@@ -1,0 +1,32 @@
+fns.hpp file:
+template <typename T>
+T power_of_you(T num1, T powa) {
+  T result = num1;
+  for(int i = 1; i < powa; i++) {
+        result *= num1;
+  }
+  return result;
+}
+
+void cant_touch_this();
+
+
+main.cpp file:
+
+#include <iostream>
+#include "fns.hpp"
+int main() {
+  
+  std::cout << power_of_you(3,3) << "\n";
+  cant_touch_this();
+    
+}
+
+fns.cpp file:
+
+void cant_touch_this() {
+  std::string name;
+  std::cout << "Stop! Who dat?!\n Enter name: ";
+  std::cin >> name;
+  std::cout << "\n" << name << ".... You can't touch this!\n";
+}

@@ -1,0 +1,32 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+// Change needs_it_support so that it returns support:
+std::string needs_it_support() {
+  
+  bool support;
+  
+  std::cout << "Hello. IT. Have you tried turning it off and on again? Enter 1 for yes, 0 for no.\n";
+  std::cin >> support;
+  
+  if(support == 0) {
+    return "No.\n";
+  }
+  else {
+    return "Yes.\n";
+  }
+}
+
+int main() {
+  
+  // Change the following line to print the function result:
+  std::cout << needs_it_support() << "\n";
+  
+}
