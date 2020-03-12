@@ -1,0 +1,83 @@
+What is the challenge?
+I am trying to reorder an alphabetical list from a)-f) of type string where the the string in f) gets placed in a) and the string in e) gets placed in b).
+Therefore reversing the order of the list.
+
+So solution would consist having a vector to accept the input. 
+Another vector to store the new order of the previous vector.
+
+then use a loop to place the elements in first vector into the second vector in the order that we want.
+
+
+
+
+
+
+Data to be used:
+
+a) TDP Academy / Transition into Business: I have fulfilled Excelling at Relationships value due to the fact I was able to networking with a variety of people during TDP Academy such as managers, product owners, and other developers and create lasting relationships.
+
+b) Self-directed Learning: Inspiring Trust was seen here as I have completed extra training outside the TDP Academy hours to further increase my knowledge in areas where I did not have a lot of experience. 
+
+c) Probation: Doing the right thing in the right way was seen here as I was taught about the common practices followed in a group of software developer when developing code and the ceremonies that can take place i.e. daily scrum, sprint planning etc. This helped me to follow these practices carefully to make sure I do my job the right way.
+
+d) Experiential Learning - Performance: Rising to the Challenge value was seen here because I volunteered to be a senior software developer in a group project and this allowed me to experience the challenges a leader can face when trying to develop an application.
+
+e) Experiential Learning - Always Learning: Putting our members and their money first value was seen here because I underwent intense technical training so that I could offer the members of Nationwide Building Society my skills and knowledge when completing project in my area. This was seen through the group project I led where my group and myself created a question-and-answer website for new starters.
+
+f) Career Development: Inspiring Trust value is seen here because having been place in my business area I am developing my career through having meetings with various people who will assist me with creating a development plan for myself.
+
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+    string user_input;
+    
+    vector<string> normal_paragraph;
+    vector<string> reordered_paragraph;
+    
+    cout << "Enter your input: ";
+    
+    while(cin >> user_input){
+        if(user_input != " ") { //Trying to add a condition to be able to stop iterating the inputs
+            normal_paragraph.push_back(user_input);
+            
+            cout << "Enter your input: ";
+    
+            cin >> user_input;
+        }
+        
+        else {
+            break;
+        }
+        
+        break;
+    }
+    
+    
+    normal_paragraph.push_back(user_input);
+    
+    /*while(cin >> normal_paragraph) {
+        if(normal_paragraph == "end"){
+            break;
+        }
+    }*/
+    
+    //for (int)
+    cout << normal_paragraph[0] << "\n";
+    /*for (int i = 0; i < paragraph.size()) {
+        
+    }
+    */
+    
+    return 0;
+}
